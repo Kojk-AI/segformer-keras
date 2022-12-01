@@ -22,7 +22,7 @@ class Modelcfg():
             #Overlap patch merging module params
             self.kernel_sizes=[7, 3, 3, 3]
             self.strides=[4, 2, 2, 2]
-            self.emb_sizes=[32, 64, 160, 256]
+            self.emb_sizes=[64, 128, 320, 512]
             #Reduction
             self.reduction_ratios=[8, 4, 2, 1]
             self.mlp_expansions=[8, 8, 4, 4]
@@ -30,63 +30,63 @@ class Modelcfg():
             self.num_heads=[1, 2, 5, 8]
             self.depths=[2, 2, 2, 2]
             #decoder params
-            self.decoder_channels = 256
+            self.decoder_channels = 512
             self.scale_factors = [1, 2, 4, 8]
         if cfg['type'] == "B2":
             #Overlap patch merging module params
             self.kernel_sizes=[7, 3, 3, 3]
             self.strides=[4, 2, 2, 2]
-            self.emb_sizes=[32, 64, 160, 256]
+            self.emb_sizes=[64, 128, 320, 512]
             #Reduction
             self.reduction_ratios=[8, 4, 2, 1]
             self.mlp_expansions=[8, 8, 4, 4]
             #Cross attention params
             self.num_heads=[1, 2, 5, 8]
-            self.depths=[2, 2, 2, 2]
+            self.depths=[3, 3, 6, 3]
             #decoder params
-            self.decoder_channels = 256
+            self.decoder_channels = 512
             self.scale_factors = [1, 2, 4, 8]
         if cfg['type'] == "B3":
             #Overlap patch merging module params
             self.kernel_sizes=[7, 3, 3, 3]
             self.strides=[4, 2, 2, 2]
-            self.emb_sizes=[32, 64, 160, 256]
+            self.emb_sizes=[64, 128, 320, 512]
             #Reduction
             self.reduction_ratios=[8, 4, 2, 1]
             self.mlp_expansions=[8, 8, 4, 4]
             #Cross attention params
             self.num_heads=[1, 2, 5, 8]
-            self.depths=[2, 2, 2, 2]
+            self.depths=[3, 3, 18, 3]
             #decoder params
-            self.decoder_channels = 256
+            self.decoder_channels = 512
             self.scale_factors = [1, 2, 4, 8]
         if cfg['type'] == "B4":
             #Overlap patch merging module params
             self.kernel_sizes=[7, 3, 3, 3]
             self.strides=[4, 2, 2, 2]
-            self.emb_sizes=[32, 64, 160, 256]
+            self.emb_sizes=[64, 128, 320, 512]
             #Reduction
             self.reduction_ratios=[8, 4, 2, 1]
             self.mlp_expansions=[8, 8, 4, 4]
             #Cross attention params
             self.num_heads=[1, 2, 5, 8]
-            self.depths=[2, 2, 2, 2]
+            self.depths=[3, 8, 27, 3]
             #decoder params
-            self.decoder_channels = 256
+            self.decoder_channels = 512
             self.scale_factors = [1, 2, 4, 8]
         if cfg['type'] == "B5":
             #Overlap patch merging module params
             self.kernel_sizes=[7, 3, 3, 3]
             self.strides=[4, 2, 2, 2]
-            self.emb_sizes=[32, 64, 160, 256]
+            self.emb_sizes=[64, 128, 320, 512]
             #Reduction
             self.reduction_ratios=[8, 4, 2, 1]
-            self.mlp_expansions=[8, 8, 4, 4]
+            self.mlp_expansions=[4, 4, 4, 4]
             #Cross attention params
             self.num_heads=[1, 2, 5, 8]
-            self.depths=[2, 2, 2, 2]
+            self.depths=[3, 6, 40, 3]
             #decoder params
-            self.decoder_channels = 256
+            self.decoder_channels = 512
             self.scale_factors = [1, 2, 4, 8]
 
 class Datacfg():
