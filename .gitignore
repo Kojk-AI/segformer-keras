@@ -1,0 +1,6 @@
+__pycache__/
+ckpts/
+logs/
+train/
+validation/
+weights/
