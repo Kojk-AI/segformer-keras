@@ -1,0 +1,14 @@
+model:
+  input_shape: [224,224,3]
+  type: "B0"
+  num_classes: 91
+data:
+  train_image_dir: "train/data"
+  train_mask_dir: "train/mask"
+  val_image_dir: "validation/data"
+  val_mask_dir: "validation/mask"
+training:
+  batch_size: 12
+  num_epochs: 1
+  resume_training: False
+  weights_path: ""
