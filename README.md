@@ -55,7 +55,7 @@ A helper notebook is provided for visualization of the results.
 
 ## Trained Weights
 
-[Segmentation_B0_1_class]
+[Segmentation_B0_1_class](https://drive.google.com/file/d/1ejXOjzURQOheZGAQJyssK86FB-VKnSdv/view?usp=share_link)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
