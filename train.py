@@ -35,7 +35,7 @@ def run():
     loss = tf.keras.losses.SparseCategoricalCrossentropy()
     optimizer = tfa.optimizers.RectifiedAdam(
         learning_rate=1e-4, 
-        total_steps=dataset_len//cfg.training.batch_size, 
+        total_steps=cfg.training.num_epochs * dataset_len//cfg.training.batch_size, 
         warmup_proportion=0.1, 
         min_lr=1e-5,)
 
